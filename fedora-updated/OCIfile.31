@@ -1,0 +1,3 @@
+FROM fedora:31
+# run yum update twice if necessary due to RHBZ#1708249
+RUN ( yum -y update || yum -y update ) && yum clean all

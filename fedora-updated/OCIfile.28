@@ -1,0 +1,2 @@
+FROM fedora:28
+RUN yum -y update && yum clean all
